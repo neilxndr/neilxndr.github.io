@@ -1,5 +1,7 @@
 <html>
     <head>
+        
+       
         <title> Music Library</title>
         <style>
             body{
@@ -17,41 +19,112 @@
             {
                 border-radius: 20px;
             }
+            input[type=text]
+            {
+                height: 30px;
+                border-radius: 4px;
+                font-size: 20px;
+            }
             input[type=text],input[type=number],input[type=age],input[type=password],input[type=email]
             {
                 height: 30px;
                 border-radius: 4px;
             }
+            thefile {
+ 
+  z-index: 100;
+}
+
+canvas {
+  
+ 
+  width: 50%;
+  height: 50%;
+}
+
+audio {
+ 
+  width: calc(100% - 20px);
+}
+video
+            {
+                align-content: center;
+                width: 80%;
+                border-radius: 20px;
+            }
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
         </style>
     </head>
   <body background ="headphones_bw_headset_120277_1920x1080.jpg" height = "1080" width = "1920">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <div class="navbar">
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
 
    <marquee><h1 style = "font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 60;align-items: center;color: chartreuse;" > Music Library </h1>
     </marquee>
 
      <p style = "text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: antiquewhite;font-size: 40;"> Pick your Genre </p>
+        color: antiquewhite;font-size: 40;"> Pick your genre to listen</p>
     <table align="center">
         <tr>
-            <td width="30%" align="center"><a href="https://www.javatpoint.com/what-is-robotics"><img src="hector-bermudez-iIWDt0fXa84-unsplash.jpg" width="80%" alt = "first pic"></a>
+            <td width="30%" align="center"><a href="https://www.youtube.com/watch?v=PBUOc5700GA"><img src="hector-bermudez-iIWDt0fXa84-unsplash.jpg" width="80%" alt = "first pic"></a>
                 <figcaption>Rock</figcaption></td>
-            <td width="30%" align="center"><a href="https://www.javatpoint.com/what-is-robotics"><img src="images.jpeg" width="80%"></a>
+            <td width="30%" align="center"><a href="https://www.youtube.com/watch?v=KEgutwwuc5w"><img src="images.jpeg" width="80%"></a>
                 <figcaption>Pop</figcaption></td>
-            <td width="30%" align="center"><a href="https://www.javatpoint.com/what-is-robotics"><img  src="kimitc02kue51.png" height="400px"></a>
+            <td width="30%" align="center"><a href="https://www.youtube.com/watch?v=WdBldz3YLss"><img  src="kimitc02kue51.png" height="400px"></a>
                 <figcaption>Electronic</figcaption><br><br></td>
         </tr>
         <tr>
-            <td width="30%" align="center"><a href="https://www.javatpoint.com/what-is-robotics"><img src="4171962.jpg" width="80%"></a>  
+            <td width="30%" align="center"><a href="https://m.youtube.com/playlist?list=PLuUrokoVSxlfUJuJB_D8j_wsFR4exaEmy"><img src="4171962.jpg" width="80%"></a>  
                 <figcaption>Hip-Pop</figcaption>&emsp;&emsp;&emsp;&emsp;</td>
-            <td width="30%" align="center"><a href="https://www.javatpoint.com/what-is-robotics"><img src="download.jpeg" width="80%"></a>  
+            <td width="30%" align="center"><a href="https://www.youtube.com/watch?v=yUO9iNwh8Ts"><img src="download.jpeg" width="80%"></a>  
                 <figcaption>Country</figcaption></td>
-            <td width="30%" align="center"><a href="https://www.javatpoint.com/what-is-robotics"><img src="indie-basement-best-of-2019.jpg" width="80%"></a>  
+            <td width="30%" align="center"><a href="https://www.youtube.com/watch?v=pYGgUsPKjYo"><img src="indie-basement-best-of-2019.jpg" width="80%"></a>  
                 <figcaption><font color="antiquewhite">Indie</font></figcaption></td>
         </tr>
     </table>
     <br><br><br>
 
+    <p style="font-size: 35px; background-color: antiquewhite;" align="center">This week's Top Hit</p><br><br>
+    <center> <video controls> <source src = "Taylor Swift - Anti-Hero (Official Music Video).mp4"></video></center><br><br>
 <div align="center">
     <table style="background-color:wheat;border-radius: 20px;">
         <tr>
@@ -95,7 +168,8 @@
     </table>
 </div>
 <br><br><br><br>
-<p style="font-size: 35px; background-color: antiquewhite;" align="center">Top Hits of 2021</p>
+<p style="font-size: 35px; background-color: antiquewhite;" align="center">Top Hits of 2021<br>Click on the album covers to watch the video</p><br><br>
+</p>
 <center><img src="collage.jpg" width="70%" style="border-radius:20px;" usemap="#workmap"></center>
 <map name="workmap">
     <area shape="rect" coords="0,0,330,210" alt="Silk Sonic" href="https://youtu.be/adLGHcj_fmA">
@@ -108,8 +182,14 @@
     <area shape="rect" coords="0,465,330,677" alt="Bts X Coldplay" href="https://youtu.be/3YqPKLZF_WU">
     <area shape="rect" coords="330,465,670,677" alt="Adele" href="https://youtu.be/X-yIEMduRXk">
     <area shape="rect" coords="670,465,1000,677" alt="Ed Sheeran" href="https://youtu.be/Il0S8BoucSA">
-</map>
-<p style="font-size: 35px; background-color: antiquewhite;" align="center">Click on the album covers to watch the video</p><br><br>
+</map><br><br>
+<p style="font-size: 35px; background-color: antiquewhite;" align="center">Audio Visualization</p>
+<p style="color: antiquewhite;">Choose audio file of your choice</p>
+<div id="content" >
+    <input type="file" id="thefile" accept="audio/*" />
+    <canvas id="canvas"></canvas>
+    <audio id="audio" controls></audio>
+  </div>
 <form>
     <center>
     <div style="font-size:25px;background-color: beige;border-radius: 20px;">
@@ -125,9 +205,88 @@
         <input type="radio" name="genre" value="rnb">RnB &emsp;
         <input type="radio" name="genre" value="rock">Rock &emsp;<br><br>
         <input type="checkbox">I accept Terms and Conditions<br><br>
+        <input type = "button" value="Detect my Location" onclick="getlocation()"> <br><br>
+        <div id ="loc"></div><br><br>
     </div>
     </center>
 </form>
+<script>
+    var variable1 = document.getElementById("loc");
+    function getlocation() {
+      navigator.geolocation.getCurrentPosition(showLoc);
+    }
+    function showLoc(pos) {
+      variable1.innerHTML =
+        "Latitude: " +
+        pos.coords.latitude +
+        "<br>Longitude: " +
+        pos.coords.longitude;
+    }
+    window.onload = function() {
+  
+  var file = document.getElementById("thefile");
+  var audio = document.getElementById("audio");
+  
+  file.onchange = function() {
+    var files = this.files;
+    audio.src = URL.createObjectURL(files[0]);
+    audio.load();
+    audio.play();
+    var context = new AudioContext();
+    var src = context.createMediaElementSource(audio);
+    var analyser = context.createAnalyser();
+
+    var canvas = document.getElementById("canvas");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    var ctx = canvas.getContext("2d");
+
+    src.connect(analyser);
+    analyser.connect(context.destination);
+
+    analyser.fftSize = 256;
+
+    var bufferLength = analyser.frequencyBinCount;
+    console.log(bufferLength);
+
+    var dataArray = new Uint8Array(bufferLength);
+
+    var WIDTH = canvas.width;
+    var HEIGHT = canvas.height;
+
+    var barWidth = (WIDTH / bufferLength) * 2.5;
+    var barHeight;
+    var x = 0;
+
+    function renderFrame() {
+      requestAnimationFrame(renderFrame);
+
+      x = 0;
+
+      analyser.getByteFrequencyData(dataArray);
+
+      ctx.fillStyle = "#000";
+      ctx.fillRect(0, 0, WIDTH, HEIGHT);
+
+      for (var i = 0; i < bufferLength; i++) {
+        barHeight = dataArray[i];
+        
+        var r = barHeight + (25 * (i/bufferLength));
+        var g = 250 * (i/bufferLength);
+        var b = 50;
+
+        ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+        ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+
+        x += barWidth + 1;
+      }
+    }
+
+    audio.play();
+    renderFrame();
+  };
+};
+</script>
    </body>
 
 </html>
