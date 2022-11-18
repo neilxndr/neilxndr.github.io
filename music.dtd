@@ -1,0 +1,15 @@
+ <?xml version="1.0"?>
+<!DOCTYPE MusicDatabase[
+
+<!ELEMENT MySong (Title,PerformingArtist,ContainedInAlbum,SongLength,Year,Genre,Location,Path)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT PerformingArtist (#PCDATA)>
+<!ELEMENT ContainedInAlbum (#PCDATA)>
+<!ELEMENT SongLength (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>
+<!ELEMENT Path (#PCDATA)>
+
+
+]>
