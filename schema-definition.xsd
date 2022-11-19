@@ -1,0 +1,27 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Songs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MySong" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Title"/>
+              <xs:element type="xs:string" name="PerformingArtist"/>
+              <xs:element type="xs:string" name="ContainedInAlbum"/>
+              <xs:element type="xs:string" name="SongLength"/>
+              <xs:element type="xs:short" name="Year"/>
+              <xs:element type="xs:string" name="Genre"/>
+              <xs:element name="Location">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Path"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

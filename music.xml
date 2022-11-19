@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="music.xsl"?>
-<MusicDatabase>
-<title>My Playlist</title>
 
 <Songs>
 <MySong>
@@ -9,7 +7,7 @@
 <PerformingArtist>The Beatles</PerformingArtist>
 <ContainedInAlbum>1</ContainedInAlbum>
 <SongLength>2:20</SongLength>
-<Year value="2000"/>
+<Year>2000</Year>
 <Genre>Classic Rock</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\The Beatles\1\01 - Love Me Do.mp3</Path>
@@ -21,7 +19,7 @@
 <PerformingArtist>The Beatles</PerformingArtist>
 <ContainedInAlbum>1</ContainedInAlbum>
 <SongLength>1:56</SongLength>
-<Year value="2000"/>
+<Year>2000</Year>
 <Genre>Classic Rock</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\The Beatles\1\02 - From Me To You.mp3</Path>
@@ -33,7 +31,7 @@
 <PerformingArtist>Eagles</PerformingArtist>
 <ContainedInAlbum>The Very Best Of The Eagles</ContainedInAlbum>
 <SongLength>6:52</SongLength>
-<Year value="1994"/>
+<Year>1990</Year>
 <Genre>Classic Rock</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
@@ -45,7 +43,7 @@
 <PerformingArtist>Eagles</PerformingArtist>
 <ContainedInAlbum>The Very Best Of The Eagles</ContainedInAlbum>
 <SongLength>3:32</SongLength>
-<Year value="2007"/>
+<Year>2007</Year>
 <Genre>Classic Rock</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
@@ -57,7 +55,7 @@
 <PerformingArtist>Eagles</PerformingArtist>
 <ContainedInAlbum>The Very Best Of The Eagles</ContainedInAlbum>
 <SongLength>4:11</SongLength>
-<Year value="2007"/>
+<Year>2005</Year>
 <Genre>Classic Rock</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\02 - Witchy Woman.mp3</Path>
@@ -69,7 +67,7 @@
 <PerformingArtist>The Beatles</PerformingArtist>
 <ContainedInAlbum>1</ContainedInAlbum>
 <SongLength>4:28</SongLength>
-<Year value="1995"/>
+<Year>1995</Year>
 <Genre>Classic Rock</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
@@ -81,7 +79,7 @@
 <PerformingArtist>Eminem</PerformingArtist>
 <ContainedInAlbum>The Slim Shady LP</ContainedInAlbum>
 <SongLength>4:02</SongLength>
-<Year value="1999"/>
+<Year>1995</Year>
 <Genre>Hip-Hop</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
@@ -93,14 +91,10 @@
 <PerformingArtist>Drake</PerformingArtist>
 <ContainedInAlbum>Views</ContainedInAlbum>
 <SongLength>4:49</SongLength>
-<Year value="2016"/>
-<Genre>R&B</Genre>
+<Year>2016</Year>
+<Genre>R-B</Genre>
 <Location>
 <Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
 </Location>
 </MySong>
 </Songs>
-
-
-
-</MusicDatabase>
