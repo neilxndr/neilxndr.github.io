@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		My Songs
+	</title>
+</head>
+<body bgcolor = "antiquewhite" style="border: 6px ;">
+<table style="border:1px; padding: 10px;">
+	<tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>PerformingArtist</td>
+        <td>ContainedInAlbum</td>
+        <td>SongLength</td>
+        <td>Year</td>
+        <td>Genre</td>
+
+	</tr>
+
+	<tbody id="demo"></tbody>
+	<tbody id="dynamic_field1"></tbody>
+</table>
+<button type="button" name="add1" id="add1" class="btn btn-success" onclick="add()">Add More Rows </button>
+
+</body>
+<script>
+	var tab="";
+var a=0;
+var b=0;
+var x,new1;
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    	parser = new DOMParser();
+xmlDoc = parser.parseFromString(this.responseText,"text/xml");
+
+for(var a=0;xmlDoc.getElementsByTagName("ID")[a].childNodes[0].nodeValue!=null;a++)
+{
+b++;
+
+x=document.getElementById("demo").innerHTML +="<tr id=row"+a+"><td><input type='number' value="+
+xmlDoc.getElementsByTagName("ID")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Title")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("PerformingArtist")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("ContainedInAlbum")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("SongLength")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Year")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Genre")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove1(id)>Remove</button></td></tr>";
+     
+}
+
+
+    }
+  };
+  xhttp.open("GET", "music.xml", true);
+  xhttp.send();
+}
+function remove1(id)
+{
+	document.getElementById("row"+id).remove();
+}
+function remove(id)
+{
+	document.getElementById("dynamic_field1").deleteRow(-1);
+}
+function add()
+{x++;
+	table=document.getElementById("dynamic_field1")
+	var row= table.insertRow(-1);
+	var cell1 = row.insertCell(0);
+	var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	var cell4 = row.insertCell(3);
+	var cell5 = row.insertCell(4);
+	var cell6 = row.insertCell(5);
+	var cell7 = row.insertCell(6);
+  var cell8 = row.insertCell(7);
+	cell1.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell2.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell3.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell4.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell5.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell6.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+  cell7.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
+	cell8.innerHTML+="<tr id=row"+x+"<td><button type=button name=remove id="+x+" class=btn btn-danger btn_remove1 onclick=remove(id)>Remove</button></td> </tr>";
+}
+
+
+loadXMLDoc();
+
+
+</script>
+<style type="text/css">
+	table, th, td {
+  border: 0px solid red;
+}
+</style>
+</html>

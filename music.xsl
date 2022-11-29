@@ -39,6 +39,7 @@
   <h2>My Music</h2>
   <table border="2">
     <tr bgcolor="#9acd32">
+      <th>ID</th>
       <th>Title</th>
       <th>Performing Artist</th>
       <th>Album</th>
@@ -48,6 +49,7 @@
     </tr>
     <xsl:for-each select="Songs/MySong">
     <tr>
+    <td bgcolor="green"><xsl:value-of select="ID"/></td>
       <td bgcolor="gray"><xsl:value-of select="Title"/></td>
       <td bgcolor="green"><xsl:value-of select="PerformingArtist"/></td>
       <td bgcolor="gray"><xsl:value-of select="ContainedInAlbum"/></td>
@@ -61,6 +63,7 @@
 <h2>Music sorted by Name</h2>
   <table border="2">
     <tr bgcolor="#9acd32">
+      <th>ID</th>
       <th>Title</th>
       <th>PerformingArtist</th>
       <th>ContainedInAlbum</th>
@@ -71,6 +74,7 @@
     <xsl:for-each select="Songs/MySong">
     <xsl:sort select="type"/>
     <tr>
+      <td bgcolor="gray"><xsl:value-of select="ID"/></td>
       <td bgcolor="green"><xsl:value-of select="Title"/></td>
       <td bgcolor="gray"><xsl:value-of select="PerformingArtist"/></td>
       <td bgcolor="green"><xsl:value-of select="ContainedInAlbum"/></td>
@@ -84,6 +88,7 @@
 <h2> Music: Classic Rock</h2>
 <table border="2">
     <tr bgcolor="#9acd32">
+      <th>ID</th>
       <th>Title</th>
       <th>PerformingArtist</th>
       <th>ContainedInAlbum</th>
@@ -94,7 +99,8 @@
     <xsl:for-each select="Songs/MySong">
     <xsl:if test="Genre='Classic Rock'">
     <tr>
-       <td bgcolor="gray"><xsl:value-of select="Title"/></td>
+     <td bgcolor="green"><xsl:value-of select="ID"/></td>
+      <td bgcolor="gray"><xsl:value-of select="Title"/></td>
       <td bgcolor="green"><xsl:value-of select="PerformingArtist"/></td>
       <td bgcolor="gray"><xsl:value-of select="ContainedInAlbum"/></td>
       <td bgcolor="green"><xsl:value-of select="SongLength"/></td>
@@ -108,6 +114,7 @@
 <h2> Music Released after 2000</h2>
 <table border="2">
     <tr bgcolor="yellow">
+    <th>ID</th>
        <th>Title</th>
       <th>PerformingArtist</th>
       <th>ContainedInAlbum</th>
@@ -128,6 +135,7 @@
          <td><xsl:value-of select="Genre"/></td>
       </xsl:otherwise>
       </xsl:choose>
+       <td bgcolor="gray"><xsl:value-of select="ID"/></td>
       <td bgcolor="green"><xsl:value-of select="Title"/></td>
       <td bgcolor="gray"><xsl:value-of select="PerformingArtist"/></td>
       <td bgcolor="green"><xsl:value-of select="ContainedInAlbum"/></td>

@@ -2,6 +2,7 @@
 <!DOCTYPE Songs[
 
 <!ELEMENT MySong (Title,PerformingArtist,ContainedInAlbum,SongLength,Year,Genre,Location,Path)>
+<!ELEMENT ID (#PCDATA)>
 <!ELEMENT Title (#PCDATA)>
 <!ELEMENT PerformingArtist (#PCDATA)>
 <!ELEMENT ContainedInAlbum (#PCDATA)>

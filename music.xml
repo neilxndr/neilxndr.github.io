@@ -3,6 +3,7 @@
 
 <Songs>
 <MySong>
+<ID>1</ID>
 <Title>Love Me Do</Title>
 <PerformingArtist>The Beatles</PerformingArtist>
 <ContainedInAlbum>1</ContainedInAlbum>
@@ -15,6 +16,7 @@
 </MySong>
 
 <MySong>
+<ID>2</ID>
 <Title>From Me To You</Title>
 <PerformingArtist>The Beatles</PerformingArtist>
 <ContainedInAlbum>1</ContainedInAlbum>
@@ -27,6 +29,7 @@
 </MySong>
 
 <MySong>
+<ID>3</ID>
 <Title>Hotel California</Title>
 <PerformingArtist>Eagles</PerformingArtist>
 <ContainedInAlbum>The Very Best Of The Eagles</ContainedInAlbum>
@@ -39,6 +42,7 @@
 </MySong>
 
 <MySong>
+<ID>4</ID>
 <Title>Take It Easy</Title>
 <PerformingArtist>Eagles</PerformingArtist>
 <ContainedInAlbum>The Very Best Of The Eagles</ContainedInAlbum>
@@ -51,6 +55,7 @@
 </MySong>
 
 <MySong>
+<ID>5</ID>
 <Title>Witchy Woman</Title>
 <PerformingArtist>Eagles</PerformingArtist>
 <ContainedInAlbum>The Very Best Of The Eagles</ContainedInAlbum>
@@ -63,6 +68,7 @@
 </MySong>
 
 <MySong>
+<ID>6</ID>
 <Title>Hey Jude</Title>
 <PerformingArtist>The Beatles</PerformingArtist>
 <ContainedInAlbum>1</ContainedInAlbum>
@@ -75,6 +81,7 @@
 </MySong>
 
 <MySong>
+<ID>7</ID>
 <Title>My Name Is</Title>
 <PerformingArtist>Eminem</PerformingArtist>
 <ContainedInAlbum>The Slim Shady LP</ContainedInAlbum>
@@ -87,6 +94,7 @@
 </MySong>
 
 <MySong>
+<ID>8</ID>
 <Title>One Dance</Title>
 <PerformingArtist>Drake</PerformingArtist>
 <ContainedInAlbum>Views</ContainedInAlbum>
