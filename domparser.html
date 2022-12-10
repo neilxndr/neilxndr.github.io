@@ -6,9 +6,48 @@
 	<title>
 		My Songs
 	</title>
+	<style type="text/css">
+		table, th, td {
+			text-align: center;
+      border-radius:20px;
+      background-color: antiquewhite;
+      border-width: 3px;
+      transition: .2s;
+	  border: 0px solid red;
+	}
+	.button1 {
+  background-color: brown;
+  border: none;
+  color: antiquewhite;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+.button1:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#add1 {
+	background-color: brown;
+  border: none;
+  color: antiquewhite;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+#add1:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+	</style>
 </head>
-<body bgcolor = "antiquewhite" style="border: 6px ;">
-<table style="border:1px; padding: 10px;">
+<marquee><h1 style = "font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 60;align-items: center;color: brown;" > My Songs </h1>
+</marquee>
+<body bgcolor = "antiquewhite" style="border: 6px;background-repeat: no-repeat;background-attachment: fixed;background-size: cover; " background="pngtree-note-music-logo-watercolor-background-picture-image_1589075.jpg" >
+<table style="border:10px; padding: 10px; color: brown;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
 	<tr>
         <td>ID</td>
         <td>Title</td>
@@ -22,8 +61,8 @@
 
 	<tbody id="demo"></tbody>
 	<tbody id="dynamic_field1"></tbody>
-</table>
-<button type="button" name="add1" id="add1" class="btn btn-success" onclick="add()">Add More Rows </button>
+</table><br><br>
+<center><button type="button" name="add1" id="add1" class="btn btn-success" onclick="add()">Add More Rows </button></center>
 
 </body>
 <script>
@@ -43,14 +82,14 @@ for(var a=0;xmlDoc.getElementsByTagName("ID")[a].childNodes[0].nodeValue!=null;a
 b++;
 
 x=document.getElementById("demo").innerHTML +="<tr id=row"+a+"><td><input type='number' value="+
-xmlDoc.getElementsByTagName("ID")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Title")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("PerformingArtist")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("ContainedInAlbum")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("SongLength")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Year")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Genre")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove1(id)>Remove</button></td></tr>";
+xmlDoc.getElementsByTagName("ID")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Title")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("PerformingArtist")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("ContainedInAlbum")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("SongLength")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Year")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Genre")[a].childNodes[0].nodeValue+"></td><td><button class = \"button1\" type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove1(id)>Remove</button></td></tr>";
      
 }
 
 
     }
   };
-  xhttp.open("GET", "music.xml", true);
+  xhttp.open("GET", "music1.xml", true);
   xhttp.send();
 }
 function remove1(id)
@@ -80,7 +119,7 @@ function add()
 	cell5.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
 	cell6.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
   cell7.innerHTML+="<tr id=row"+x+"><td><input type='text'></td></tr>";
-	cell8.innerHTML+="<tr id=row"+x+"<td><button type=button name=remove id="+x+" class=btn btn-danger btn_remove1 onclick=remove(id)>Remove</button></td> </tr>";
+	cell8.innerHTML+="<tr id=row"+x+"<td><button class = \"button1\" type=button name=remove id="+x+" class=btn btn-danger btn_remove1 onclick=remove(id)>Remove</button></td></tr>";
 }
 
 
@@ -88,9 +127,5 @@ loadXMLDoc();
 
 
 </script>
-<style type="text/css">
-	table, th, td {
-  border: 0px solid red;
-}
-</style>
+
 </html>

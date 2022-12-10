@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="music.xsl"?>
+
+<Songs>
+<MySong>
+<ID>1</ID>
+<Title>LoveMeDo</Title>
+<PerformingArtist>TheBeatles</PerformingArtist>
+<ContainedInAlbum>1</ContainedInAlbum>
+<SongLength>2:20</SongLength>
+<Year>2000</Year>
+<Genre>ClassicRock</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\The Beatles\1\01 - Love Me Do.mp3</Path>
+</Location>
+</MySong>
+
+<MySong>
+<ID>2</ID>
+<Title>FromMeToYou</Title>
+<PerformingArtist>TheBeatles</PerformingArtist>
+<ContainedInAlbum>1</ContainedInAlbum>
+<SongLength>1:56</SongLength>
+<Year>2000</Year>
+<Genre>ClassicRock</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\The Beatles\1\02 - From Me To You.mp3</Path>
+</Location>
+</MySong>
+
+<MySong>
+<ID>3</ID>
+<Title>HotelCalifornia</Title>
+<PerformingArtist>Eagles</PerformingArtist>
+<ContainedInAlbum>TheVeryBestOfTheEagles</ContainedInAlbum>
+<SongLength>6:52</SongLength>
+<Year>1990</Year>
+<Genre>ClassicRock</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
+</Location>
+</MySong>
+
+<MySong>
+<ID>4</ID>
+<Title>TakeItEasy</Title>
+<PerformingArtist>Eagles</PerformingArtist>
+<ContainedInAlbum>TheVeryBestOfTheEagles</ContainedInAlbum>
+<SongLength>3:32</SongLength>
+<Year>2007</Year>
+<Genre>ClassicRock</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
+</Location>
+</MySong>
+
+<MySong>
+<ID>5</ID>
+<Title>WitchyWoman</Title>
+<PerformingArtist>Eagles</PerformingArtist>
+<ContainedInAlbum>TheVeryBestOfTheEagles</ContainedInAlbum>
+<SongLength>4:11</SongLength>
+<Year>2005</Year>
+<Genre>ClassicRock</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\02 - Witchy Woman.mp3</Path>
+</Location>
+</MySong>
+
+<MySong>
+<ID>6</ID>
+<Title>HeyJude</Title>
+<PerformingArtist>TheBeatles</PerformingArtist>
+<ContainedInAlbum>1</ContainedInAlbum>
+<SongLength>4:28</SongLength>
+<Year>1995</Year>
+<Genre>ClassicRock</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
+</Location>
+</MySong>
+
+<MySong>
+<ID>7</ID>
+<Title>MyNameIs</Title>
+<PerformingArtist>Eminem</PerformingArtist>
+<ContainedInAlbum>TheSlimShadyLP</ContainedInAlbum>
+<SongLength>4:02</SongLength>
+<Year>1995</Year>
+<Genre>Hip-Hop</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
+</Location>
+</MySong>
+
+<MySong>
+<ID>8</ID>
+<Title>OneDance</Title>
+<PerformingArtist>Drake</PerformingArtist>
+<ContainedInAlbum>Views</ContainedInAlbum>
+<SongLength>4:49</SongLength>
+<Year>2016</Year>
+<Genre>R-B</Genre>
+<Location>
+<Path>Z:\WWW\WWW-Pub\Media\Music\Eagles\The Very Best Of The Eagles\01 - Take It Easy.mp3</Path>
+</Location>
+</MySong>
+</Songs>

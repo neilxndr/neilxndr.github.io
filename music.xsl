@@ -137,9 +137,9 @@
       </xsl:choose>
        <td bgcolor="gray"><xsl:value-of select="ID"/></td>
       <td bgcolor="green"><xsl:value-of select="Title"/></td>
+      <td bgcolor="gray"><xsl:value-of select="ContainedInAlbum"/></td>
+      <td bgcolor="green"><xsl:value-of select="Title"/></td>
       <td bgcolor="gray"><xsl:value-of select="PerformingArtist"/></td>
-      <td bgcolor="green"><xsl:value-of select="ContainedInAlbum"/></td>
-      <td bgcolor="gray"><xsl:value-of select="SongLength"/></td>
       <td bgcolor="green"><xsl:value-of select="Year"/></td>
     </tr>
     </xsl:for-each>
