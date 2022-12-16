@@ -1,6 +1,6 @@
 body {
     font-family: 'Century Gothic';
-    background-attachment: fixed;
+    background-attachment:scroll;
 }
 
 td figcaption {
@@ -187,7 +187,7 @@ border-radius: 0;
 }
 
 .input-label {
-    color: #8597a3;
+    color: #353f44;
     position: absolute;
     top: 1.5rem;
     transition: .25s ease;
@@ -240,7 +240,7 @@ border-radius: 0;
     padding: 1rem 1rem;
     text-align: center;
     font-size: .875rem;
-    color: #8597a3;
+    color: #31383d;
 
     a {
         display: block;
@@ -248,3 +248,71 @@ border-radius: 0;
         text-decoration: none;
     }
 }
+
+
+/*input[type=date],input[type=number]
+        {
+            height: 30px;
+            border-radius: 4px;
+            font-size: 16px;
+            border-color:green ;
+            border-top: 0ch;
+            border-left: 0;
+            border-right: 0;
+            padding-left: 10px;
+        }
+        input[type=radio]
+        {
+            width:20px;
+            height: 20px;
+            transition: 1.5s;
+        }
+        input[type=radio]:checked
+        {
+            transform: scale(1.75);
+        }
+        input[type=date]:focus ,input[type=number]:focus
+        {
+            outline: none;
+            border-color: red;
+        }*/
+        button
+        {
+            font-size: x-large;
+            border-radius: 5px;
+            transition: 0.2s;
+        }
+        button:hover
+        {
+            transform: scale(1.25);
+        }
+
+        .sub_div 
+        {
+            position: absolute;
+            bottom: 0px;
+        }
+        p 
+        {
+            margin-left:20px;
+        }
+        div
+        {
+            transition: 1.5s;
+        }
+        #myDIV
+        {
+            border-radius: 100%;
+        }
+        #myDIV:active {
+            animation: mymove 1s;
+            }
+
+            @keyframes mymove {
+            20% {transform: rotate(180deg);}
+            }
+
+        body
+        {
+            transition: 1s;
+        }

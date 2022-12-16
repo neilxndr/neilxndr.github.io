@@ -159,3 +159,157 @@ function lockNumber(evt)
 
          return true;
       }
+
+
+      var today = new Date();
+      var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
+    
+      function setCookie(name, value)
+      {
+        document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+      }
+
+
+      
+      function storeValues()  
+  {
+    setCookie("uname", document.getElementById("name").value);
+    setCookie("email", document.getElementById("email").value);
+    setCookie("number",document.getElementById("number").value);
+    alert("Cookies have been set.");
+    //setCookie("field4", form.field4.value);
+    return true;
+  }
+  function printCookies(sec)
+  {
+    cookievalue = escape(document.getElementById(sec).value) + ";";
+               document.cookie = "name=" + cookievalue;
+               alert ("Setting Cookies : " + "name=" + cookievalue );
+  }
+
+  function getCookie(pname)
+  {
+    var re = new RegExp(pname + "=([^;]+)");
+    var value = re.exec(document.cookie);
+    return (value != null) ? unescape(value[1]) : null;
+  }
+function autofill()
+{
+ newname = getCookie("name"); 
+ document.getElementById("name").value = newname;
+ newemail= getCookie("email");
+ document.getElementById("email").value = newemail;
+ newnumber = getCookie("number");
+document.getElementById("number").value = newnumber;
+  //if(field4 = getCookie("field4")) document.myForm.field4.value = field4;
+}
+
+  var expired = new Date(today.getTime() - 24 * 3600 * 1000); // less 24 hours
+
+  function deleteCookie(name)
+  {
+    document.cookie=name + "=null; path=/; expires=" + expired.toGMTString();
+  }
+
+  function clearCookies()
+  {
+    deleteCookie("uname");
+    deleteCookie("email");
+    deleteCookie("numnber"); 
+   // deleteCookie("field4");
+    alert('Your cookies have been deleted!');
+  }
+
+        var back;
+        function setbCookie(cname, cvalue, exdays) 
+        {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            let expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            
+        }
+
+
+        function func1(x)
+        {
+          if(x=="theme")
+          {
+              var color=x;
+          }
+
+            var uname1=document.getElementById("name").value;
+            var email1=document.getElementById("email").value;
+            var number1=document.getElementById("number").value;
+
+            setbCookie("name",uname1,2);
+            setbCookie("email",email1,2);
+            setbCookie("number",number1,2); 
+            setbCookie("color",x,2);
+            document.getElementById("bg1").style.backgroundColor=x;
+            document.getElementById("form1").style.backgroundColor=x;
+            document.getElementById("tables").style.backgroundColor=x;
+            document.getElementById("para1").style.backgroundColor=x;
+            document.getElementById("para2").style.backgroundColor=x;
+            document.getElementById("para3").style.backgroundColor=x;
+            document.getElementById("para4").style.backgroundColor=x;
+            document.getElementById("para5").style.backgroundColor=x;
+            document.getElementById("heading").style.backgroundColor=x;
+            document.getElementById("add1").style.backgroundColor=x;
+
+
+
+
+        }
+
+        function func2()
+        {
+            var back=Math.floor(Math.random() * 7)+".jpg";
+            setbCookie("back",back,2);
+            document.body.style.backgroundImage = "url(backs/"+back+")";
+        }
+
+        function getbCookie(cname) 
+        {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for(let i = 0; i <ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function fillbox()
+        {
+            document.getElementById("date1").value=getbCookie("visdate");
+            document.getElementById("no1").value=getbCookie("visnos");
+            document.getElementById("name1").value=getbCookie("visname1");
+            document.getElementById("bg").style.backgroundColor=getbCookie("color");
+            document.getElementById("bg1").style.backgroundColor=getbCookie("color");
+            document.getElementById(getbCookie("color")).checked=true;
+            document.body.style.backgroundImage = "url(backs/"+getbCookie("back")+")";
+        }
+
+        function fb1()
+        {
+          document.getElementById("bg1").style.backgroundColor=getbCookie("color");
+        }
+
+        function remove()
+        {
+            alert("Submitted Successfully");
+            document.cookie = "visdate"+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "visnos"+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "visname1"+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            location.reload();
+        }
+
+
+
