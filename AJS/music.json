@@ -1,0 +1,86 @@
+﻿{
+  "Songs": {
+    "MySong": [
+      {
+        "ID": "1",
+        "Title": "Love Me Do",
+        "PerformingArtist": "The Beatles",
+        "ContainedInAlbum": "1",
+        "SongLength": "2:20",
+        "Year": "2000",
+        "Genre": "Classic Rock",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\The Beatles\\1\\01 - Love Me Do.mp3"}
+      },
+      {
+        "ID": "2",
+        "Title": "From Me To You",
+        "PerformingArtist": "The Beatles",
+        "ContainedInAlbum": "1",
+        "SongLength": "1:56",
+        "Year": "2000",
+        "Genre": "Classic Rock",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\The Beatles\\1\\02 - From Me To You.mp3"}
+      },
+      {
+        "ID": "3",
+        "Title": "Hotel California",
+        "PerformingArtist": "Eagles",
+        "ContainedInAlbum": "The Very Best Of The Eagles",
+        "SongLength": "6:52",
+        "Year": "1990",
+        "Genre": "Classic Rock",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\Eagles\\The Very Best Of The Eagles\\01 - Take It Easy.mp3"}
+      },
+      {
+        "ID": "4",
+        "Title": "Take It Easy",
+        "PerformingArtist": "Eagles",
+        "ContainedInAlbum": "The Very Best Of The Eagles",
+        "SongLength": "3:32",
+        "Year": "2007",
+        "Genre": "Classic Rock",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\Eagles\\The Very Best Of The Eagles\\01 - Take It Easy.mp3"}
+      },
+      {
+        "ID": "5",
+        "Title": "Witchy Woman",
+        "PerformingArtist": "Eagles",
+        "ContainedInAlbum": "The Very Best Of The Eagles",
+        "SongLength": "4:11",
+        "Year": "2005",
+        "Genre": "Classic Rock",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\Eagles\\The Very Best Of The Eagles\\02 - Witchy Woman.mp3"}
+      },
+      {
+        "ID": "6",
+        "Title": "Hey Jude",
+        "PerformingArtist": "The Beatles",
+        "ContainedInAlbum": "1",
+        "SongLength": "4:28",
+        "Year": "1995",
+        "Genre": "Classic Rock",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\Eagles\\The Very Best Of The Eagles\\01 - Take It Easy.mp3"}
+      },
+      {
+        "ID": "7",
+        "Title": "My Name Is",
+        "PerformingArtist": "Eminem",
+        "ContainedInAlbum": "The Slim Shady LP",
+        "SongLength": "4:02",
+        "Year": "1995",
+        "Genre": "Hip-Hop",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\Eagles\\The Very Best Of The Eagles\\01 - Take It Easy.mp3"}
+      },
+      {
+        "ID": "8",
+        "Title": "One Dance",
+        "PerformingArtist": "Drake",
+        "ContainedInAlbum": "Views",
+        "SongLength": "4:49",
+        "Year": "2016",
+        "Genre": "R-B",
+        "Location": {"Path": "Z:\\WWW\\WWW-Pub\\Media\\Music\\Eagles\\The Very Best Of The Eagles\\01 - Take It Easy.mp3"}
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+
+
+<div>
+    <h1 style="height: 1rem;background-color: blue;"></h1>
+    <div class="container-fluid px-5 py-3">
+        <table class="table table-borderless table-hover container-fluid">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Size</th>
+                    <th>Color</th>
+                    <th>Material</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="cloth in clothing">
+                <tr>
+                    <td>{{cloth.id}}</td>
+                    <td>{{cloth.name | uppercase}}</td>
+                    <td>{{cloth.price*2 | currency}}</td>
+                    <td>{{cloth.size | lowercase}}</td>
+                    <td>{{cloth.color | uppercase}}</td>
+                    <td>{{cloth.material}}</td>
+                    <td>{{cloth.category}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

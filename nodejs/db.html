@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method='post' action='/submit'>
+        <div>
+            <h1>Insert Values</h1>
+        Name: <input type="text" name="name" /><br>
+        Email: <input type="email" name="email" /><br>
+        Phone: <input type="number" name="phone" /><br>
+        Age: <input type="number" name="age" /><br>
+        Gender<input type="text" name="gender" /><br>
+        <button type='submit'>Click</button>
+        </div>
+   </form>
+   
+   <form method='post' action='/update'>
+        <div>
+            <h1>Update age and phone</h1>
+            Enter your name: <input type="text" name="al_name" /><br>
+            Choose field to edit:
+            <select name="al_field" id="cars">
+                <option value="phone">Saab</option>
+                <option value="age">Mercedes</option>
+            </select>
+            <input type="number" name="al_value">
+            <button type='submit'>Click</button>
+        </div>
+   </form>
+   <form method='post' action='/delete'>
+    <div>
+        <h1>Delete Record</h1>
+        Enter your name: <input type="text" name="del_name" /><br>
+        <button type='submit'>Click</button>
+    </div>
+    </form>
+    <form method='post' action='/search'>
+        <div>
+            <h1>Search Record</h1>
+            Enter your name: <input type="text" name="sea_name" /><br>
+            <button type='submit'>Click</button>
+        </div>
+    </form>
+    <form method='post' action='/display'>
+        <div>
+            <h1>Click here to display all the records</h1>
+            <button type='submit'>Click</button>
+        </div>
+    </form>
+</body>
+</html>

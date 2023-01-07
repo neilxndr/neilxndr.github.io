@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "T-Shirt",
+    "price": 20.99,
+    "size": "S",
+    "color": "red",
+    "material": "cotton",
+    "category": "men's"
+  },
+  {
+    "id": 2,
+    "name": "Dress",
+    "price": 49.99,
+    "size": "M",
+    "color": "blue",
+    "material": "polyester",
+    "category": "women's"
+  },
+  {
+    "id": 3,
+    "name": "Jeans",
+    "price": 35.99,
+    "size": "L",
+    "color": "black",
+    "material": "denim",
+    "category": "men's"
+  },
+  {
+    "id": 4,
+    "name": "Skirt",
+    "price": 24.99,
+    "size": "XL",
+    "color": "green",
+    "material": "cotton",
+    "category": "women's"
+  },
+  {
+    "id": 5,
+    "name": "Jacket",
+    "price": 59.99,
+    "size": "S",
+    "color": "yellow",
+    "material": "leather",
+    "category": "men's"
+  },
+  {
+    "id": 6,
+    "name": "Blouse",
+    "price": 29.99,
+    "size": "M",
+    "color": "white",
+    "material": "silk",
+    "category": "women's"
+  },
+  {
+    "id": 7,
+    "name": "Shirt",
+    "price": 39.99,
+    "size": "M",
+    "color": "green",
+    "material": "cotton",
+    "category": "women's"
+  },
+  {
+    "id": 7,
+    "name": "Shirt",
+    "price": 39.99,
+    "size": "M",
+    "color": "green",
+    "material": "cotton",
+    "category": "women's"
+  }
+]

@@ -1,0 +1,64 @@
+<!DOCTYPE html>    
+ <html ng-app = "Clothingapp">    
+ <head>    
+   <title>Clothing Details</title> 
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+   <script>
+    var app = angular.module("Clothingapp",[]);
+    app.controller("myCtrl",function($scope,$http){
+      $http.get("clothing.json").then(function(response){
+        $scope.clothing = response.data;
+      });
+      });
+
+   </script>   
+   <style>
+    table td,th
+      {
+      text-align: center;
+      border-radius:5px;
+      background-color: antiquewhite;
+      font-size: 20px;
+      transition: 0.2ms;
+      border: 5%;
+      border-color: brown;
+      }
+      table
+      {
+      text-align: center;
+      }
+      table td:hover ,th:hover
+      {
+          transform: scale(1.25);
+          cursor: pointer;
+      }
+</style>
+ </head>    
+ <body>  
+  <h2 style="color:brown;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Clothing details</h2>
+  <font style="font-size: 25px;">Search&emsp;</font><input type="Search" ng-model="search" 
+  placeholder="Enter text to search" /><img src=""><br><br>
+  <div ng-controller="myCtrl">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Size</th>
+            <th>Colour</th>
+            <th>Material</th>
+            <th>Category</th>
+          </tr>
+          <tr ng-repeat="cloth in clothing | filter:search">
+            <td>{{cloth.id}}</td>
+            <td>{{cloth.name}}</td>
+            <td>{{cloth.price}}</td>
+            <td>{{cloth.size}}</td>
+            <td>{{cloth.color}}</td>
+            <td>{{cloth.material}}</td>
+            <td>{{cloth.category}}</td>
+          </tr>
+        </table>
+  </div>        
+ </body>    
+ </html>    
