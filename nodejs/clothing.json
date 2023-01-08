@@ -70,5 +70,14 @@
     "color": "green",
     "material": "cotton",
     "category": "women's"
+  },
+  {
+    "id": 7,
+    "name": "Shirt",
+    "price": 39.99,
+    "size": "M",
+    "color": "green",
+    "material": "cotton",
+    "category": "women's"
   }
 ]

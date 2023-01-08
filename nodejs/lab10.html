@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- **READ ME**
+    Before Opening this file, the lab10.js should be run as well as the xampp control panel with mysql and apache running.
+    According to lab10.js a database called 'demo' should be created as well as the table called 'user_details' with the neccessary attributes 
+    mentioned in the lab10.js(Name,mobile,email,gender,age,preferred genre and preferred artist).
+    After the above steps the data can be inserted using this html file in the browser.
+    **Note: Make sure the port in the URL is same as the one in lab10.js-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Music: Profile Modification</title>
+    <style>
+        .action-button {
+    font: inherit;
+    font-size: 20px;
+    width: 20%;
+    background-color: brown;
+    border-radius: 6px;
+    color: #FFF;
+    border: 0;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+    </style>
+</head>
+<body background ="headphones_bw_headset_120277_1920x1080.jpg" height = "1080" width = "1920">
+    <form method='post' action='/submit'>
+        <div>
+            <h1 style = "text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: antiquewhite;font-size: 40;">Create Profile</h1>
+            <div style="font-size:20px;background-color: beige;border-radius: 10px;width:350px;margin-left: 480px;">
+        &nbsp;Name:<br>&nbsp;<input type="text" name="Name" /><br>
+        &nbsp;Mobile:<br>&nbsp;<input type="text" name="Mobile" /><br>
+        &nbsp;Email:<br>&nbsp;<input type="email" name="Email" /><br>
+        &nbsp;Gender:<br>&nbsp;<input type="text" name="Gender" /><br>
+        &nbsp;Age:<br>&nbsp;<input type="Number" name="Age" /><br>
+        &nbsp;Preferred_Genres:<br>&nbsp;<input type = "text" name = "Preferred_Genre" /><br>
+        &nbsp;Preferred_Artists:<br>&nbsp;<input type = "text" name = "Preferred_Artist" /><br>
+        &nbsp;<center><button class = "action-button" type='submit'>Submit</button></center><br>
+        </div>
+        </div>
+   </form><br>
+   
+   <form method='post' action='/update'>
+        <div>
+            <h1 style = "text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: antiquewhite;font-size: 40;">Update Age and Phone</h1>
+            <div style="font-size:20px;background-color: beige;border-radius: 10px;width:350px;margin-left: 480px;">
+                &nbsp;Enter your name:<br>&nbsp;<input type="text" name="al_name" /><br>
+                &nbsp;Choose field to edit:
+            <select name="al_field" id="update">
+                <option value="Mobile">Mobile</option>
+                <option value="Age">Age</option>   
+            </select>
+            <br>&nbsp;<input type="number" name="al_value"> <br>
+            &nbsp;<center><button class = "action-button" type='submit'>Submit</button></center><br>
+        </div></div>
+   </form><br>
+   <form method='post' action='/delete'>
+    <div>
+        <h1 style = "text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: antiquewhite;font-size: 40;">Delete Record</h1>
+        <div style="font-size:20px;background-color: beige;border-radius: 10px;width:350px;margin-left: 480px;">
+            &nbsp;Enter your name:<br>&nbsp;<input type="text" name="del_name" /><br>
+            &nbsp;<center><button class = "action-button" type='submit'>Submit</button></center><br>
+    </div></div>
+    </form><br>
+    <form method='post' action='/search'>
+        <div>
+            <h1 style = "text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: antiquewhite;font-size: 40;">Search Record</h1>
+            <div style="font-size:20px;background-color: beige;border-radius: 10px;width:350px;margin-left: 480px;">
+                &nbsp;Enter your name:<br>&nbsp;<input type="text" name="sea_name" /><br>
+                &nbsp;<center><button class = "action-button" type='submit'>Submit</button></center><br>
+        </div> </div>
+    </form> <br>
+    <form method='post' action='/display'>
+        <div>
+            <h1 style = "text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: antiquewhite;font-size: 40;">Click here to display all the records</h1>
+            &nbsp;<center><button class = "action-button" type='submit'>Display</button></center><br>
+        </div>
+    </form>
+</body>
+</html>
